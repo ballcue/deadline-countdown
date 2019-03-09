@@ -21,7 +21,7 @@ class Clock extends Component {
     }
 
     unitSingleOrPlural(amount, singleUnitName, pluralUnitName) {
-        return `${amount} ${amount == 1 ? singleUnitName : pluralUnitName}`
+        return `${amount} ${amount === 1 ? singleUnitName : pluralUnitName}`
     }
 
     render() {

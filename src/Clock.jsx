@@ -27,10 +27,10 @@ class Clock extends Component {
     render() {
         return (
             <div className={'Clock'}>
-                <div className='Clock-days'>{this.unitSingleOrPlural(this.state.days, 'day', 'days')}</div>
-                <div className='Clock-hours'>{this.unitSingleOrPlural(this.state.hours, 'hour', 'hours')}</div>
-                <div className='Clock-minutes'>{this.unitSingleOrPlural(this.state.minutes, 'minute', 'minutes')}</div>
-                <div className='Clock-seconds'>{this.unitSingleOrPlural(this.state.seconds, 'second', 'seconds')}</div>
+                <div className='Clock-text'>{this.unitSingleOrPlural(this.state.days, 'day', 'days')}</div>
+                <div className='Clock-text'>{this.unitSingleOrPlural(this.state.hours, 'hour', 'hours')}</div>
+                <div className='Clock-text'>{this.unitSingleOrPlural(this.state.minutes, 'minute', 'minutes')}</div>
+                <div className='Clock-text'>{this.unitSingleOrPlural(this.state.seconds, 'second', 'seconds')}</div>
             </div>
         );
     }

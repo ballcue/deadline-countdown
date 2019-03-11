@@ -42,19 +42,17 @@ class App extends Component {
                 <div className='App-title-small'>Time until</div>
                 <div className='App-title-big'>{this.state.deadline}</div>
                 <Clock deadline={this.state.deadline} />
-                <div>
-                    <Form inline className='Form'>
-                        <FormControl
-                            className='Deadline-input'
-                            onChange={event => this.newDeadline = event.target.value}
-                            placeholder='Enter date'
-                        />
-                        <Button variant='light' onClick={() => this.changeDeadline()}>Submit</Button>
-                    </Form>
+                <div className='Form'>
+                    <input
+                        className='Deadline-input'
+                        onChange={event => this.newDeadline = event.target.value}
+                        placeholder='Enter date'
+                    />
+                    <button className='Deadline-input-button' onClick={() => this.changeDeadline()}>Submit</button>
                 </div>
                 <div>
                     <Alert
-                        dismissible variant = 'warning' className='Input-alert'
+                        variant='warning' className='Input-alert'
                         show={this.displayDateInputError}
                         onClose={() => this.handleDateInputErrorClose()}
                     >

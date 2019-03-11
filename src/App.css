@@ -1,42 +1,50 @@
 .App {
     text-align: center;
-    font-size: 35px;
     margin-top: 15%;
     color: white;
 }
 
 .App-title-small {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 3vmin;
+    margin-bottom: 2vmin;
 }
 
 .App-title-big {
-    font-size: 60px;
-    border: 2px dashed white;
-    border-radius: 30px;
-    box-sizing: border-box;
-    padding: 20px;
-    width: 50%;
+    height: 15vmin;
+    font-size: 10vmin;
+    width: fit-content;
+    padding: 0 0.5em;
+
     margin: auto;
+    /*text-align: center;*/
+
+    border: 0.2vmin dashed white;
+    border-radius: 2vmin;
 }
 
 .Clock {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 1.5vmin;
+    margin-bottom: 1.5vmin;
 }
 
-.Clock-days, .Clock-hours, .Clock-minutes, .Clock-seconds {
+.Clock-text {
     display: inline;
-    margin: 15px;
+    margin: 1.5vmin;
+    font-size: 3vmin;
 }
 
 .Deadline-input {
-    font-size: 15px;
-    margin-right: 5px;
+    font-size: 1.5vmin;
+    margin-right: 0.5vmin;
+    height: 4vmin;
+    width: 15vmin;
 }
 
-.Form {
-    display: block;
+.Deadline-input-button {
+    height: 4vmin;
+    width: fit-content;
+    font-size: 1.3vmin;
+    vertical-align: bottom;
 }
 
 .Main-card {
@@ -48,10 +56,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    font-size: 15px;
-    padding: 15px;
+    font-size: 1.5vmin;
+    padding: 1.5vmin;
     background-color: transparent;
     color: #292929;
     border-color: transparent;
-
 }
